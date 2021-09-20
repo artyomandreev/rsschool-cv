@@ -3,117 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <title>CV Artyom Andreev</title>
-    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/stackoverflow-dark.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </head>
 <body>
+<div class="container">
     <header class="header">
-        <div class="left-head-container">
-            <div>
-                <img src="img/my_photo.jpg" alt="My Photo" class="photo">
-            </div>
-        </div>
-        <div class="right-head-container">
-            <div>
-                <hr class="head-hr">
-            </div>
-            <div>
-                <h1>ARTYOM ANDREEV</h1>
-                <h3>Software developer</h3>
-            </div>
+        <div class="header-container">
+            <nav class="nav">
+                <ul class="navigation-list">
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#summary">Summary</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#codeExample">Code</a></li>
+                    <li><a href="#languages">Languages</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main class="main">
-        <div class="left-main-container caption">
-            <div>
-                <h5>Date of Birth: 30.05.1993 (28 years old)</h5>
-                <h5>Location: Minsk, Belarus</h5>
-            </div>
-            <div>
-                <h2>Contacts</h2>
-                <hr class="main-hr">
-                <div class="contacts-text">
-                    <ul>
-                        <li><b>Phone:</b> +375(33)667-23-52</li>
-                        <li><b>Email:</b> andreev.artiom@gmail.com</li>
-                        <li><b>Telegram:</b> @andreev_artyom</li>
-                        <li><b>Skype:</b> andreev.artyom</li>
-                    </ul>
+        <div class="main-container">
+            <section class="about-section">
+                <img src="./img/my_photo.jpg" alt="" class="photo"/>
+                <div>
+                    <h1>ARTYOM ANDREEV</h1>
+                    <h3>Software developer</h3>
+                    <h5>Date of Birth: 30.05.1993 (28 years old)</h5>
+                    <h5>Location: Minsk, Belarus</h5>
                 </div>
-            </div>
-            <div class="caption">
-                <h2>Summary</h2>
-                <hr class="main-hr">
-                <div class="text">
-                    <p>I have experience in software development.
-                        Since I have participated in many projects in different positions, my knowledge is rather
-                        scattered.
-                        Therefore, I want to master actual technologies and improve my skills and knowledge in the
-                        front-end development.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="right-main-container">
-            <div class="caption">
-                <h2>Skills and Technologies</h2>
-                <hr class="main-hr">
-                <div class="text">
-                    <ul>
-                        <li><b>Programming Languages:</b> Java, Java Script</li>
-                        <li><b>Additional Technologies:</b> SQL, HTML, CSS, JSF, Primefaces</li>
-                        <li><b>IDE:</b> IntelliJ IDEA, NetBeans</li>
-                        <li><b>Databases:</b> Oracle</li>
-                        <li><b>VCS:</b> Git, SVN</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="caption">
-                <h2>Work Experience</h2>
-                <hr class="main-hr">
-                <div class="text">
-                    <h4>Place of work: Todes Ltd.</h4>
-                    <h4>Participation in projects:</h4>
-                    <ul>
-                        <li>2017 - now - State System of Population Registration</li>
-                        <li>2016 - 2017 - Information System of Courts of General Jurisdiction</li>
-                        <li>2015 - 2016 - Information System of Citizenship and Migration</li>
-                        <li>2012 - 2015 - Economic Courts Information System</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="caption">
-                <h2>Education</h2>
-                <hr class="main-hr">
-                <div class="text">
-                    <h4>2010 - 2013 - Belarusian National Technical University</h4>
-                    <ul>
-                        <li><b>Faculty:</b> Mechanical engineering faculty</li>
-                        <li><b>Specialization:</b> Mechanical engineering technology</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="caption">
-                <h2>Languages</h2>
-                <hr class="main-hr">
-                <div class="text">
-                    <ul>
-                        <li><b>English:</b> A2</li>
-                    </ul>
-                </div>
-            </div>
+            </section>
+            <hr>
+            <section>
+                <h2 id="contacts">Contacts</h2>
+                <ul>
+                    <li><b>Phone:</b> +375(33)667-23-52</li>
+                    <li><b>Email:</b> andreev.artiom@gmail.com</li>
+                    <li><b>Telegram:</b> @andreev_artyom</li>
+                    <li><b>Skype:</b> andreev.artyom</li>
+                </ul>
+            </section>
+            <hr>
+            <section>
+                <h2 id="summary">Summary</h2>
+                <p>I have experience in software development.
+                    Since I have participated in many projects in different positions, my knowledge is rather
+                    scattered.
+                    Therefore, I want to master actual technologies and improve my skills and knowledge in the
+                    front-end development.
+                </p>
+            </section>
+            <hr>
+            <section>
+                <h2 id="skills">Skills and Technologies</h2>
+                <ul>
+                    <li><b>Programming Languages:</b> Java, Java Script</li>
+                    <li><b>Additional Technologies:</b> SQL, HTML, CSS, JSF, Primefaces</li>
+                    <li><b>IDE:</b> IntelliJ IDEA, NetBeans</li>
+                    <li><b>Databases:</b> Oracle</li>
+                    <li><b>VCS:</b> Git, SVN</li>
+                </ul>
+            </section>
+            <hr>
+            <section>
+                <h2 id="experience">Work Experience</h2>
+                <h4>Place of work: Todes Ltd.</h4>
+                <h4>Participation in projects:</h4>
+                <ul>
+                    <li>2017 - now - State System of Population Registration</li>
+                    <li>2016 - 2017 - Information System of Courts of General Jurisdiction</li>
+                    <li>2015 - 2016 - Information System of Citizenship and Migration</li>
+                    <li>2012 - 2015 - Economic Courts Information System</li>
+                </ul>
+            </section>
+            <hr>
+            <section class="projects-section">
+                <h2 id="projects">Recent projects</h2>
+                <figure>
+                    <figcaption>
+                        DRUM KIT
+                    </figcaption>
+                    <a href="https://rolling-scopes-school.github.io/artyomandreev-JSFEPRESCHOOL/drum-kit/"
+                       target="_blank" class="project-link">
+                        <img src="./img/drum-kit.JPG" alt="" class="project-img">
+
+                    </a>
+                    <p>A fun drum kit app</p>
+                    <p>Used: HTML, CSS, JS</p>
+                </figure>
+                <figure>
+                    <figcaption>
+                        PHOTO FILTER
+                    </figcaption>
+                    <a href="https://rolling-scopes-school.github.io/artyomandreev-JSFEPRESCHOOL/photo-filter/"
+                       target="_blank" class="project-link">
+                        <img src="./img/photo-filter.JPG" alt="" class="project-img">
+
+                    </a>
+                    <p>Application for applying various filters to your photos</p>
+                    <p>Used: HTML, CSS, JS</p>
+                </figure>
+            </section>
+            <hr>
+            <section>
+                <h2 id="education">Education and courses</h2>
+                <h4>2010 - 2013 - Belarusian National Technical University</h4>
+                <ul>
+                    <li><b>Faculty:</b> Mechanical engineering faculty</li>
+                    <li><b>Specialization:</b> Mechanical engineering technology</li>
+                </ul>
+                <h4>2021 - now - JS/FRONT-END in Rolling Scopes School</h4>
+            </section>
+            <hr>
+            <section class="code-section">
+                <h2 id="codeExample">Code example</h2>
+                <p>Matrix creation kata from CODEWARS: Create an identity matrix of the specified size( >= 0)</p>
+                <p>For example:</p>
+                <pre>
+                    <code class="markdown">
+(1)  =>  [[1]]
+
+(2) => [ [1,0],
+         [0,1] ]
+
+       [ [1,0,0,0,0],
+         [0,1,0,0,0],
+(5) =>   [0,0,1,0,0],
+         [0,0,0,1,0],
+         [0,0,0,0,1] ]
+                    </code>
+                </pre>
+                <p>My solution:</p>
+                <pre>
+                    <code class="language-javascript agate">function getMatrix(number) {
+  let matrix = [];
+  for (let i = 0; i &lt; number; i++) {
+    let row = [];
+    for (let j = 0; j &lt; number; j++) {
+      row.unshift(j === i ? 1 : 0);
+    }
+    matrix.unshift(row);
+  }
+  return matrix;
+}
+                    </code>
+                </pre>
+            </section>
+            <hr>
+            <section>
+                <h2 id="languages">Languages</h2>
+                <ul>
+                    <li><b>Russian:</b> Native</li>
+                    <li><b>English:</b> A2</li>
+                </ul>
+            </section>
+            <hr>
         </div>
     </main>
     <footer class="footer">
-        <div class="left-foot-container foot-text">
-            <a href="https://rs.school/js/">
+        <div class="foot-container">
+            <h5>© 2021</h5>
+            <a href="https://github.com/artyomandreev" target="_blank">GitHub</a>
+            <a href="https://rs.school/js/" target="_blank">RS School</a>
+            <a href="https://rs.school/js/" target="_blank">
                 <img src="img/rs_school_js.svg" alt="RS Logo" class="logo">
             </a>
-            <h5>© 2021</h5>
-        </div>
-        <div class="right-foot-container foot-text">
-            <a href="https://github.com/artyomandreev">GitHub</a>
-            <a href="https://rs.school/js/">RS School</a>
         </div>
     </footer>
+</div>
+<script src="./script.js"></script>
 </body>
 </html>
